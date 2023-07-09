@@ -16,10 +16,6 @@ ul {
   list-style: none;
   margin: 0px 20px;
   padding: 0;
-  @media (max-width: 767px) {
-    width: 300px;
-    margin: 10px;
-  }
 }
 li {
   font-size: 0.8rem;
@@ -57,10 +53,6 @@ li {
   transform: translate(-50%, -50%);
   border-radius: 15px;
   overflow: hidden;
-  @media (max-width: 767px) {
-    width: 340px;
-    flex-direction: column;
-  }
 }
 
 .image-product-desktop {
@@ -68,9 +60,6 @@ li {
   height: 400px;
   object-fit: cover;
   object-position: center;
-  @media (max-width: 767px) {
-    height: 250px;
-  }
 }
 
 .price {
@@ -107,4 +96,18 @@ button {
 button:hover {
   cursor: pointer;
   background-color: hsl(158, 26%, 27%);
+}
+
+@media (max-width: 767px) {
+  .image-product-desktop {
+    height: 250px;
+  }
+  ul {
+    width: 300px;
+    margin: 10px;
+  }
+  .container {
+    width: 340px;
+    flex-direction: column;
+  }
 }
